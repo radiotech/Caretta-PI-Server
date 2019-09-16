@@ -1,7 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+require('dotenv').config();
 const WSS = require("ws");
-const wss = new WSS.Server({ port: 25565 });
+const wss = new WSS.Server({ port: parseInt(process.env.PORT) });
+console.log(`Listening on port ${parseInt(process.env.PORT)}`);
 let rooms = {};
 wss.on('connection', function connection(ws) {
     let id = `${new Date().getTime()}-${Math.floor(Math.random() * 10000000)}`;

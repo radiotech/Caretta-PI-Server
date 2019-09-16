@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "dotenv": "^8.1.0",
     "ws": "^7.1.2"
   },
   "scripts": {
-      "build": "tsc",
-      "start": "node build/index.js"
+    "build": "tsc",
+    "start": "node build/index.js"
   },
   "devDependencies": {
     "@types/ws": "^6.0.3",

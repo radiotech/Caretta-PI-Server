@@ -1,6 +1,8 @@
+require('dotenv').config();
 import * as WSS from 'ws';
 
-const wss = new WSS.Server({port: 25565});
+const wss = new WSS.Server({port: parseInt(process.env.PORT!)});
+console.log(`Listening on port ${parseInt(process.env.PORT!)}`);
 
 let rooms: {[name: string]: {clients: {id: string, ws: WSS}[], data: string | undefined}} = {};
 
