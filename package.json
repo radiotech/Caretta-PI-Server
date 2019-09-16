@@ -1,0 +1,17 @@
+{
+  "name": "caretta2-pi_server",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "ws": "^7.1.2"
+  },
+  "scripts": {
+      "build": "tsc",
+      "start": "node build/index.js"
+  },
+  "devDependencies": {
+    "@types/ws": "^6.0.3",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.6.3"
+  }
+}

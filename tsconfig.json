@@ -1,0 +1,15 @@
+{
+    "include": [
+        "./src/**/*"
+    ],
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "watch": true,
+        "sourceMap": false,
+        "outDir": "./build",
+        "strict": true,
+        "moduleResolution": "node",
+        "baseUrl": "."
+    }
+}
