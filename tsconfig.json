@@ -5,7 +5,7 @@
     "compilerOptions": {
         "target": "es6",
         "module": "commonjs",
-        "watch": true,
+        "watch": false,
         "sourceMap": false,
         "outDir": "./build",
         "strict": true,
